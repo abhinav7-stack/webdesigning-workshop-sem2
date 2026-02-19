@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chess Home</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+
+            background: url("https://images.unsplash.com/photo-1528819622765-d6bcf132f793")
+            no-repeat center center/cover;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.65);
+            z-index: -1;
+        }
+
+   
+        nav {
+            width: 100%;
+            padding: 15px 40px;
+            background: rgba(50, 30, 20, 0.95);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            font-size: 24px;
+            color: #f0d9b5;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        nav ul li a:hover {
+            color: #f0d9b5;
+        }
+
+     
+        .home {
+            margin: 60px auto;
+            width: 85vmin;
+            padding: 5vmin;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(93, 64, 55, 0.9);
+            border: 6px solid #f0d9b5;
+            box-shadow: 0 0 30px rgba(0,0,0,0.8);
+            color: white;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 6vmin;
+            margin-bottom: 1vmin;
+        }
+
+        .subtitle {
+            font-size: 2.5vmin;
+            margin-bottom: 4vmin;
+            color: #f0d9b5;
+        }
+
+        .button {
+            display: block;
+            width: 30vmin;
+            padding: 1.5vmin;
+            margin: 1.5vmin;
+            font-size: 2.3vmin;
+            text-decoration: none;
+            background-color: #f0d9b5;
+            color: black;
+            border-radius: 6px;
+        }
+
+        .button:hover {
+            background-color: #b58863;
+            color: white;
+        }
+
+        .features {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            width: 220px;
+            padding: 20px;
+            background: rgba(0,0,0,0.5);
+            border: 2px solid #f0d9b5;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #f0d9b5;
+        }
+
+ 
+        .rules {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(0,0,0,0.4);
+            border-left: 4px solid #f0d9b5;
+            text-align: left;
+        }
+
+        .rules h2 {
+            color: #f0d9b5;
+        }
+
+   
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(30, 15, 10, 0.9);
+            color: #ddd;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+<nav>
+    <div class="logo">♟ Chess</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="chess.html">Play</a></li>
+        <li><a href="#rules">Rules</a></li>
+        <li><a href="#">About</a></li>
+    </ul>
+</nav>
+
+
+<div class="home">
+    <div class="title">♟ Chess Game</div>
+    <div class="subtitle">Welcome to My Simple Chess Project</div>
+
+    <a href="chess.html" class="button">Start Game</a>
+    <a href="#rules" class="button">View Rules</a>
+
+ 
+    <div class="features">
+        <div class="card">
+            <h3>♜ Strategy</h3>
+            <p>Improve logical thinking and planning skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>♞ Two Players</h3>
+            <p>Classic chess experience with standard rules.</p>
+        </div>
+
+        <div class="card">
+            <h3>♚ Simple UI</h3>
+            <p>Clean and beginner-friendly design.</p>
+        </div>
+    </div>
+
+
+    <div class="rules" id="rules">
+        <h2>Basic Rules</h2>
+        <ul>
+            <li>White moves first</li>
+            <li>Each piece moves differently</li>
+            <li>Checkmate wins the game</li>
+            <li>No illegal moves allowed</li>
+        </ul>
+    </div>
+</div>
+
+
+<footer>
+    © 2026 Simple Chess Project | Designed with ♟️
+</footer>
+
+</body>
+</html>
