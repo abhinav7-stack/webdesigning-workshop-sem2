@@ -1,0 +1,14 @@
+*{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.main{
+    justify-content: center;
+    border: 2px rgb(24, 3, 3);
+    border-radius: 10px;
+}
+button{
+    background-color: aquamarine; 
+    color: azure;
+    align-items: center;
+
+}
