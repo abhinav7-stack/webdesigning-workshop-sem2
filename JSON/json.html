@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let student ={
+        name:"deepti",
+        age:25,
+    };
+    let jsondata=JSON.stringify(student);
+    console.log(jsondata);
+    let jsonstring=`{"name":"Arvind","age":19}`;
+    let obj=JSON.parse(jsonstring);
+    console.log(jsonstring.name);
+    let student1={
+        name:"Abhinav",
+        age:19,
+        course:"CSE",
+
+    };
+    for(let key in student){
+        console.log(key+" : " + student1[key]);
+    }
+    </script>
+</body>
+</html>
